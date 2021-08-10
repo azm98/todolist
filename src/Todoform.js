@@ -20,6 +20,8 @@ export default class Todolist extends Component {
         this.setState({
             text:''
         })
+        const {text}=this.state;
+        localStorage.setItem('text',text)
     }
     render() {
         return (
